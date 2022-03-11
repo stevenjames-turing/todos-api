@@ -21,7 +21,7 @@ RSpec.describe "Todos API", type: :request do
 
   # Test suite for GET /todos/:id
   describe 'GET /todos/:id' do 
-    before { get "todos/#{todo_id}" }
+    before { get "/todos/#{todo_id}" }
 
     context 'when the record exists' do 
       it 'returns the todo' do 

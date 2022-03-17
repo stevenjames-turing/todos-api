@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  skip_before_action :authorize_request, only: :authenticate 
   include Response 
   include ExceptionHandler
 
